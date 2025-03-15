@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.SendRequest">
+    <ComboBox fx:id="userComboBox" editable="true" layoutX="135.0" layoutY="40.0" onKeyReleased="#handleSearchBox" prefHeight="26.0" prefWidth="285.0" />
+    <Button layoutX="460.0" layoutY="40.0" onAction="#handleSendFriendRequest" text="Send" />
+</AnchorPane>

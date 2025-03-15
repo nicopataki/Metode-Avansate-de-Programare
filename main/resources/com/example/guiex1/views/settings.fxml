@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.settingsController">
+    <children>
+        <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="665.0">
+                    <children>
+                        <Label layoutX="277.0" layoutY="47.0" text="Settings" textFill="black">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="280.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleLogOut" text="Log Out" />
+                        <Button layoutX="259.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleDeleteAccount" text="Delete Account" />
+                        <Button layoutX="257.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleupdateUtilizator" text="Modify Account" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

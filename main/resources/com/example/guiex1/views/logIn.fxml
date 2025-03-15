@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.logInController">
+    <children>
+        <SplitPane dividerPositions="0.75" orientation="VERTICAL" prefHeight="520.0" prefWidth="667.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="667.0">
+                    <children>
+                        <Label layoutX="312.0" layoutY="50.0" text="Sign in" textFill="black">
+                            <font>
+                                <Font name="System Bold" size="37.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="email" layoutX="245.0" layoutY="150.0" prefWidth="200.0" promptText="Email" />
+
+                        <Text fx:id="emailErrorText" fill="RED" layoutX="245.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong email!" visible="false" wrappingWidth="200.0">
+                            <font>
+                                <Font name="System Bold" size="9.0" />
+                            </font>
+                        </Text>
+                        <PasswordField fx:id="password" layoutX="245.0" layoutY="210.0" prefWidth="200.0" promptText="Password" />
+
+                        <Text fx:id="passwordErrorText" fill="RED" layoutX="245.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong password!" visible="false" wrappingWidth="200.0">
+                            <font>
+                                <Font name="System Bold" size="9.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="667.0">
+                    <children>
+                        <Button fx:id="logInButton" layoutX="270.0" layoutY="20.0" mnemonicParsing="false" onAction="#onLogInButtonClick" prefHeight="30.0" prefWidth="126.0" text="Log In" textFill="black">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Text layoutX="245.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Text>
+                        <Hyperlink layoutX="363.0" layoutY="54.0" onAction="#onSignInClick" text="Sign In!">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Hyperlink>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

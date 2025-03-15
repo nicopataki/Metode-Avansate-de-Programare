@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="messagesWindow" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.messageController">
+    <children>
+        <Label layoutX="250.0" layoutY="20.0" text="Messages" />
+        <ListView fx:id="friends" layoutX="50.0" layoutY="62.0" prefHeight="245.0" prefWidth="150" />
+        <ListView fx:id="messages" layoutX="230.0" layoutY="62.0" prefHeight="200.0" prefWidth="300.0" />
+        <TextField fx:id="messageInput" layoutX="229.0" layoutY="279.0" prefHeight="26.0" prefWidth="266.0"/>
+        <Button layoutX="508.0" layoutY="279.0" onAction="#handleSendMessage" text="Send" />
+        <Button layoutX="250.0" layoutY="330.0" onAction="#handleClose" text="Close" />
+    </children>
+</AnchorPane>

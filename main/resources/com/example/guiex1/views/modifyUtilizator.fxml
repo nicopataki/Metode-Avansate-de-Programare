@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.ModifyController">
+    <children>
+        <SplitPane dividerPositions="0.750965250965251" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+
+                        <HBox alignment="CENTER" prefHeight="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <HBox spacing="10.0" />
+                        <HBox spacing="10.0" AnchorPane.topAnchor="40.0" />
+                        <TextField fx:id="firstNameTextField" layoutX="242.0" layoutY="159.0" prefWidth="200.0" />
+                        <Label layoutX="140.0" layoutY="162.0" text="First Name:" />
+                        <TextField fx:id="lastNameTextField" layoutX="242.0" layoutY="217.0" prefWidth="200.0" />
+                        <Label layoutX="141.0" layoutY="218.0" text="Last Name:" />
+
+                        <TextField fx:id="usernameTextField" layoutX="242.0" layoutY="274.0" prefWidth="200.0" />
+                        <Label layoutX="142.0" layoutY="277.0" text="Username:" />
+                        <TextField fx:id="passwordTextField" layoutX="242.0" layoutY="333.0" prefWidth="200.0" />
+                        <Label layoutX="144.0" layoutY="336.0" text="Password:" />
+                        <Label layoutX="258.0" layoutY="103.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Modify User" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="665.0">
+                    <children>
+                        <HBox prefHeight="34.0" prefWidth="655.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <ImageView fitHeight="48.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                        <Button layoutX="298.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+                        <Button layoutX="388.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
